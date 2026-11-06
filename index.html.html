@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MPI Bahasa Indonesia — Mengenal Novel</title>
+<style>
+:root{--ink:#39443e;--blue:#718b7b;--pale:#edf1e8;--cream:#fbf7ef;--pink:#f2e6e1;--green:#e6eee5;--gold:#c7a878;--line:#e6e1d7;--muted:#777c72}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#f8f6f0;line-height:1.7;background-image:radial-gradient(#d8d8c9 0.65px,transparent .65px);background-size:18px 18px}
+.wrap{max-width:1000px;margin:auto;padding:22px}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#e8eee5 0%,#f7eee7 100%);color:var(--ink);padding:clamp(26px,5vw,48px);border:1px solid #e2e5d9;border-radius:28px;display:grid;grid-template-columns:1.5fr 1fr;gap:15px;align-items:center;box-shadow:0 12px 32px #454c3b0a}.hero:after{content:"✳";position:absolute;right:22%;top:-46px;font-size:150px;color:#ffffff66;pointer-events:none}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:500;letter-spacing:-1.5px;line-height:1.08;margin:14px 0}.hero p{max-width:570px;color:#5e6a60}.bookart{font-size:clamp(5rem,15vw,8rem);text-align:center;filter:drop-shadow(0 8px 5px #6b786522);z-index:1}.tag{display:inline-block;background:#ffffff9c;border:1px solid #dce3d8;border-radius:99px;padding:5px 12px;font-size:.78rem;letter-spacing:.5px;color:#5d7565}.nav{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0}.nav button,.btn{border:1px solid transparent;border-radius:999px;padding:10px 16px;background:var(--blue);color:white;font-weight:650;cursor:pointer;transition:transform .18s,background .18s}.nav button{background:#fffdf8;color:#59645a;border-color:#e5e1d8}.nav button:hover,.btn:hover{transform:translateY(-1px)}.nav button.active,.btn{background:#718b7b;color:white}.panel{display:none;background:#fffdf9;border:1px solid var(--line);border-radius:22px;padding:clamp(18px,3vw,28px);margin-bottom:18px;box-shadow:0 8px 24px #343d3008}.panel.active{display:block;animation:fade .22s ease}@keyframes fade{from{opacity:.65;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.panel h2{margin-top:0;font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:1.85rem;letter-spacing:-.4px}.panel h3{font-family:Georgia,"Times New Roman",serif;font-weight:600}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{background:#edf1e8;border:1px solid #e2e8dd;border-radius:18px;padding:18px}.card:nth-child(3n+2){background:#fbf3eb;border-color:#f0e6dc}.card:nth-child(3n){background:#f2ecef;border-color:#ece1e6}.icon{font-size:2.25rem}.small{font-size:.92rem;color:var(--muted)}.quote{border-left:3px solid var(--gold);padding:13px 16px;background:#f8f3e9;border-radius:0 14px 14px 0;margin:14px 0}.cover{border-radius:14px;padding:20px;text-align:center;color:#fffdf8;min-height:155px;display:flex;flex-direction:column;justify-content:center;box-shadow:inset 0 0 0 1px #ffffff44;letter-spacing:.2px}.cover b{font-family:Georgia,"Times New Roman",serif;font-size:1.5rem;font-weight:500}.c1{background:linear-gradient(145deg,#536d73,#a7b7a9)}.c2{background:linear-gradient(145deg,#536d59,#b3b99a)}.c3{background:linear-gradient(145deg,#a06f58,#d8b994)}.c4{background:linear-gradient(145deg,#72677f,#b5a9b7)}label{display:block;font-weight:650;margin:12px 0 5px}input[type=text],textarea,select{width:100%;padding:12px;border:1px solid #dddcd1;border-radius:12px;font:inherit;background:#fffefa;color:var(--ink)}input:focus,textarea:focus,select:focus{outline:2px solid #b9cbb9;outline-offset:1px}.option{display:block;border:1px solid #e5e1d8;border-radius:12px;padding:11px 13px;margin:8px 0;cursor:pointer;background:#fffefa}.option:has(input:checked){background:#edf2e9;border-color:#9cb29c}.feedback{font-weight:700;margin-top:12px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.step{padding:15px;border-radius:14px;text-align:center;background:var(--pale);font-weight:700;border:1px solid #e0e7da}.arrow{text-align:center;font-size:1.6rem;color:var(--blue)}.footer{text-align:center;color:var(--muted);font-size:.85rem;padding:22px}.btn.secondary{background:#eeeae0;color:var(--ink);border-color:#e1ddd2}.result{padding:15px 17px;background:#edf3e9;border:1px solid #dfe8dc;border-radius:14px;margin-top:12px}.source a{overflow-wrap:anywhere;color:#526f60}.pill{font-size:.8rem;background:#e8ede4;border:1px solid #dce5d9;border-radius:999px;padding:3px 9px;display:inline-block;margin:2px 0}.nav button:focus-visible,.btn:focus-visible{outline:3px solid #c6b08b;outline-offset:3px}
+@media(max-width:620px){.hero{grid-template-columns:1fr;padding:25px 21px}.hero:after{right:5%;top:2px;font-size:100px}.bookart{font-size:4.5rem}.wrap{padding:12px}.panel{padding:17px}.steps{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.nav button{font-size:.9rem;padding:9px 12px}}
+
+/* Color enhancement: colorful pastel editorial theme */
+:root{--ink:#34364a;--blue:#6578b8;--pale:#edf0ff;--cream:#fffaf4;--pink:#ffe8ee;--green:#e6f5ed;--gold:#d9a64e;--line:#e7e0f0;--muted:#77758b}
+body{background-color:#fbf8ff;background-image:radial-gradient(#d9d0f0 1px,transparent 1px),linear-gradient(135deg,#fffaf4 0%,#f7f3ff 48%,#f1fbf7 100%);background-size:20px 20px,100% 100%;background-attachment:fixed}
+.hero{background:linear-gradient(120deg,#dfe8ff 0%,#fce3eb 48%,#fff0d9 100%);border:1px solid #e6d9f0;box-shadow:0 16px 38px #8275b51a}
+.hero:after{content:"✿";right:8%;top:-42px;font-size:190px;color:#ffffff70;transform:rotate(14deg)}
+.tag{background:#ffffffc9;border-color:#dcd5f0;color:#5f6596}
+.nav button{background:linear-gradient(135deg,#fff,#f7f3ff);color:#575b83;border-color:#e4dcf0;box-shadow:0 3px 10px #5b4b8610}
+.nav button:nth-child(2){background:#fff0f3}.nav button:nth-child(3){background:#fff4e7}.nav button:nth-child(4){background:#eaf7f0}.nav button:nth-child(5){background:#f0edff}.nav button:nth-child(6){background:#eaf5ff}
+.nav button.active,.btn{background:linear-gradient(135deg,#6578b8,#927ac4);color:white;border-color:transparent;box-shadow:0 5px 14px #7565ad35}
+.btn:hover,.nav button:hover{transform:translateY(-2px);box-shadow:0 7px 17px #7565ad22}
+.panel{background:#fffdfb;border:1px solid #e9e1f0;box-shadow:0 12px 32px #60528c0d}
+.panel h2{color:#5c6095;border-bottom:2px solid #f3dce7;padding-bottom:10px}
+.panel h3{color:#5e658f}
+.card{background:linear-gradient(145deg,#e8f0ff,#f3f0ff);border:1px solid #dce3fb;box-shadow:0 5px 16px #7785b00c;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 22px #7770a51b}
+.card:nth-child(3n+2){background:linear-gradient(145deg,#fff0e7,#fff8ed);border-color:#f3dfd2}
+.card:nth-child(3n){background:linear-gradient(145deg,#ffeaf0,#f8efff);border-color:#f0dce9}
+.cover{border-radius:16px;box-shadow:inset 0 0 0 1px #ffffff66,0 7px 16px #3f36521c;min-height:170px}
+.c1{background:linear-gradient(145deg,#435d9d,#8d9fd8 55%,#e3b6d0)}.c2{background:linear-gradient(145deg,#397a75,#8bbfa8 55%,#e8d5a0)}.c3{background:linear-gradient(145deg,#a45d58,#e7a87f 58%,#f2d7a5)}.c4{background:linear-gradient(145deg,#67518d,#aa8ec6 55%,#f0c3d7)}
+.quote{border-left:4px solid #d98ba7;background:linear-gradient(100deg,#fff0f4,#fff8ed);box-shadow:0 3px 12px #9c71850a}
+.option{transition:background .15s,border .15s}.option:hover{background:#f2efff;border-color:#bdb3e6}.option:has(input:checked){background:#eaf6ef;border-color:#83b99b}
+.steps .step:nth-child(1){background:linear-gradient(135deg,#e6efff,#f0eaff);border-color:#d8def7}.steps .step:nth-child(2){background:linear-gradient(135deg,#fff0e5,#ffe6ee);border-color:#f4d8df}.steps .step:nth-child(3){background:linear-gradient(135deg,#e3f6eb,#edf8ff);border-color:#d3e9df}
+.result{background:linear-gradient(135deg,#e8f5ee,#f0edff);border-color:#d9e7e1}
+.pill{background:#fff0f5;border-color:#f1dce6;color:#74506a}.pill:nth-of-type(2n){background:#edf2ff;border-color:#dce2f8;color:#535f93}
+input[type=text],textarea,select{border-color:#e1d9ef;background:#fffefd}input:focus,textarea:focus,select:focus{outline:2px solid #b8b0e8}
+.footer{background:linear-gradient(90deg,transparent,#f2eafa88,transparent);border-radius:18px}
+@media(max-width:620px){.hero:after{right:0;top:4px;font-size:115px}.nav{gap:7px}.nav button{box-shadow:none}}
+
+
+/* Tema khusus: Pink Pastel Aesthetic */
+:root{--ink:#603f50;--blue:#c76f91;--pale:#fff0f5;--cream:#fff9fb;--pink:#f9dce7;--green:#fceaf1;--gold:#d89a67;--line:#f0d2df;--muted:#927585}
+body{color:var(--ink);background-color:#fff7fa;background-image:radial-gradient(#f0cbd9 1px,transparent 1px),linear-gradient(135deg,#fff8fb 0%,#fdebf2 48%,#fff2e8 100%);background-size:20px 20px,100% 100%;background-attachment:fixed}
+.hero{background:linear-gradient(125deg,#f8dce7 0%,#fbe8f0 48%,#fff0e4 100%);border:1px solid #efc8d8;box-shadow:0 16px 38px #b9688b20}
+.hero:after{content:"✿";color:#ffffff99}
+.tag{background:#fff9fce8;border-color:#edcbd9;color:#9b5273}
+.nav button{background:linear-gradient(135deg,#fffafd,#fff0f5);color:#80516a;border-color:#f0d1df;box-shadow:0 3px 10px #b9688b12}
+.nav button:nth-child(2){background:#ffe5ee}.nav button:nth-child(3){background:#fff0e5}.nav button:nth-child(4){background:#fce9f2}.nav button:nth-child(5){background:#f4e8fb}.nav button:nth-child(6){background:#fff4f7}
+.nav button.active,.btn{background:linear-gradient(135deg,#d77fa0,#b96e98);color:white;border-color:transparent;box-shadow:0 5px 14px #b96e9838}
+.btn:hover,.nav button:hover{transform:translateY(-2px);box-shadow:0 7px 17px #b96e9828}
+.panel{background:#fffdfd;border:1px solid #f0d9e3;box-shadow:0 12px 32px #a35e7b12}
+.panel h2{color:#a34f76;border-bottom:2px solid #f5d4e1}.panel h3{color:#9c5a78}
+.card{background:linear-gradient(145deg,#ffe6ef,#fff2f6);border:1px solid #f3d0df;box-shadow:0 5px 16px #b96e9812}
+.card:nth-child(3n+2){background:linear-gradient(145deg,#fff0e5,#fff8f0);border-color:#f3dfd2}
+.card:nth-child(3n){background:linear-gradient(145deg,#fce8f3,#f7edff);border-color:#efd8e9}
+.cover{box-shadow:inset 0 0 0 1px #ffffff77,0 7px 16px #6b40521c}
+.c1{background:linear-gradient(145deg,#b95e83,#e6a6c0 58%,#f9d8e5)}.c2{background:linear-gradient(145deg,#a85b7c,#e6a5b9 55%,#f7d7b5)}.c3{background:linear-gradient(145deg,#b96b70,#edb2b2 58%,#f7dcb7)}.c4{background:linear-gradient(145deg,#936a9e,#d1a6d0 55%,#f6cadd)}
+.quote{border-left:4px solid #d77fa0;background:linear-gradient(100deg,#fff0f5,#fff8f1);box-shadow:0 3px 12px #9c718512}
+.option{border-color:#efd8e3;background:#fffafd}.option:hover{background:#fff0f5;border-color:#dfa4bd}.option:has(input:checked){background:#fce6ef;border-color:#d77fa0}
+.steps .step:nth-child(1){background:linear-gradient(135deg,#ffe6ef,#f8eaff);border-color:#f1d2e3}.steps .step:nth-child(2){background:linear-gradient(135deg,#fff0e5,#ffe1eb);border-color:#f2d0dd}.steps .step:nth-child(3){background:linear-gradient(135deg,#fce8f1,#fff0f5);border-color:#efd5e0}
+.result{background:linear-gradient(135deg,#ffeaf2,#fff4f8);border-color:#f0d3e0}
+.pill{background:#ffeaf2;border-color:#f1d0df;color:#8f4d6b}.pill:nth-of-type(2n){background:#f6eafa;border-color:#e9d8ef;color:#825b91}
+input[type=text],textarea,select{border-color:#edccdc;background:#fffafd;color:var(--ink)}input:focus,textarea:focus,select:focus{outline:2px solid #e4a7c0}
+.footer{background:linear-gradient(90deg,transparent,#f9e2ecaa,transparent)}
+@media(max-width:620px){.hero:after{right:0;top:4px;font-size:115px}.nav{gap:7px}.nav button{box-shadow:none}}
+
+/* Hiasan stroberi: aksen kecil yang manis, tetap ringan dan ramah layar HP */
+.berry{display:inline-block;font-family:system-ui,sans-serif;font-size:.62em;vertical-align:middle;filter:drop-shadow(0 3px 2px #b85f7b24);transform:rotate(9deg)}
+.berry-mini{display:inline-block;font-size:.78em;vertical-align:middle;filter:drop-shadow(0 2px 2px #b85f7b20);margin-left:4px}
+.bookart{position:relative}
+.berry-float{position:absolute;font-size:clamp(1.4rem,4vw,2.2rem);filter:drop-shadow(0 4px 3px #b85f7b30);animation:berryBob 3.5s ease-in-out infinite}
+.berry-one{top:7%;right:9%;transform:rotate(15deg)}
+.berry-two{bottom:9%;left:8%;font-size:clamp(1.1rem,3vw,1.65rem);transform:rotate(-18deg);animation-delay:1s}
+@keyframes berryBob{0%,100%{translate:0 0}50%{translate:0 -5px}}
+.cover .berry-sticker{position:absolute;right:10px;top:8px;font-size:1.1rem}
+.card{position:relative}
+.card:nth-child(3n+2)::after{content:"🍓";position:absolute;right:12px;top:9px;font-size:.95rem;opacity:.78;pointer-events:none;transform:rotate(12deg)}
+.quote::after{content:"🍓";float:right;margin-top:3px;opacity:.78;font-size:1rem}
+@media(prefers-reduced-motion:reduce){.berry-float{animation:none}}
+
+
+/* Strawberry overload 🍓 — dekorasi dibuat lebih ramai dan jelas */
+.hero{border:2px solid #efb5cb;}
+.hero::before{content:"🍓  🍓  🍓";position:absolute;left:18px;bottom:10px;font-size:clamp(1.1rem,2.5vw,1.65rem);letter-spacing:7px;opacity:.9;pointer-events:none;transform:rotate(-7deg)}
+.hero .tag:first-child::before{content:"🍓 ";}
+.nav button{position:relative;padding-right:22px;}
+.nav button::after{content:"🍓";font-size:.8rem;position:absolute;right:5px;top:-8px;filter:drop-shadow(0 2px 2px #b96e9840);transform:rotate(13deg)}
+.panel{position:relative;overflow:hidden;}
+.panel::before{content:"🍓 ✿ 🍓";position:absolute;right:15px;top:8px;font-size:1.15rem;letter-spacing:4px;opacity:.85;pointer-events:none;transform:rotate(7deg)}
+.panel h2::before{content:"🍓 ";font-family:system-ui,sans-serif;font-size:.8em;}
+.card{overflow:hidden;}
+.card::before{content:"🍓";position:absolute;left:9px;bottom:7px;font-size:1.2rem;opacity:.7;transform:rotate(-18deg);pointer-events:none}
+.card:nth-child(odd)::after{content:"🍓";position:absolute;right:10px;top:8px;font-size:1.2rem;opacity:.9;transform:rotate(14deg);pointer-events:none}
+.card:nth-child(3n+2)::after{content:"🍓 🍓";position:absolute;right:8px;top:8px;font-size:1rem;letter-spacing:2px;opacity:.95;pointer-events:none;transform:rotate(10deg)}
+.cover{position:relative;border:2px solid #f6c8d9;}
+.cover::before{content:"🍓";position:absolute;top:6px;left:8px;font-size:1.35rem;filter:drop-shadow(0 2px 2px #65334455);transform:rotate(-12deg)}
+.cover::after{content:"🍓 🍓";position:absolute;right:7px;bottom:4px;font-size:1rem;letter-spacing:3px;opacity:.95;transform:rotate(9deg)}
+.quote{position:relative;padding-right:52px;}
+.quote::after{content:"🍓 🍓";float:none;position:absolute;right:9px;bottom:7px;font-size:1.15rem;letter-spacing:1px;opacity:1;transform:rotate(9deg)}
+.steps .step{position:relative;}
+.steps .step::after{content:"🍓";display:block;font-size:1.15rem;line-height:1.3;}
+.result{position:relative;}
+.result::after{content:"🍓  🍓  🍓";display:block;text-align:right;font-size:1rem;letter-spacing:5px;margin-top:5px;}
+.footer::before{content:"🍓 🍓 🍓 🍓 🍓";display:block;font-size:1.25rem;letter-spacing:5px;margin-bottom:5px;}
+@media(max-width:620px){.hero::before{left:10px;bottom:4px;font-size:1rem;letter-spacing:3px}.panel::before{right:7px;top:5px;font-size:.95rem}.card::before{font-size:1rem}.nav button::after{font-size:.7rem;right:3px;top:-7px}}
+
+
+/* Ekspansi materi: ahli sastra + galeri novel */
+.expert-note{font-size:.92rem;color:#76566a}
+.expert-card h3{margin-top:8px}
+.toolbar{display:grid;grid-template-columns:1.5fr 1fr;gap:10px;margin:16px 0}
+.novel-card{display:flex;flex-direction:column;gap:8px}
+.novel-card .cover{min-height:145px;position:relative}
+.novel-card .cover small{display:block;margin-top:7px}
+.novel-card details{background:#fffafd;border:1px solid #f0d5e1;border-radius:12px;padding:10px 12px}
+.novel-card summary{cursor:pointer;font-weight:700;color:#9b5273}
+.novel-card details p{margin:8px 0}
+.novel-card .btn{align-self:flex-start}
+.fav-button{background:#fffafd;color:#a34f76;border:1px solid #e9b7ca}
+.fav-button[aria-pressed="true"]{background:#c86e91;color:#fff}
+.notice{font-size:.9rem;padding:12px 14px;border-radius:12px;background:#fff0f5;border:1px solid #f0d0df}
+@media(max-width:620px){.toolbar{grid-template-columns:1fr}.novel-card .cover{min-height:125px}}
+
+
+/* Tata letak simulasi agar rapi dan nyaman di ponsel */
+.sim-progress{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}.sim-progress span{background:#fff0f5;border:1px solid #f2d2df;border-radius:999px;padding:7px 12px;font-size:.88rem;color:#89516b}
+.sim-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}.sim-card{min-width:0;padding:18px;border:1px solid #f0d7e2;border-radius:18px;background:linear-gradient(145deg,#fffdfd,#fff5f8);box-shadow:0 5px 18px #a35e7b0b}.sim-card:first-child{grid-column:1/-1}.sim-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}.sim-head h3{margin:0 0 3px}.sim-number{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#f8d7e4,#fcebdc);color:#9c5274;font-weight:800}.sim-card .quote{margin:12px 0}.sim-card .btn{margin-top:8px}.sim-card .steps{margin-bottom:0}.sim-note{margin-top:18px;padding:12px 14px;border-radius:12px;background:#fff5f8}
+@media(max-width:650px){.sim-grid{grid-template-columns:1fr}.sim-card:first-child{grid-column:auto}.sim-card{padding:15px}.sim-progress span{font-size:.82rem}}
+
+</style></head><body><main class="wrap">
+<header class="hero"><div><span class="tag">MEDIA PEMBELAJARAN INTERAKTIF · BAHASA INDONESIA</span><h1>Mengenal Dunia Novel 📚 <span class="berry" aria-label="hiasan stroberi">🍓</span></h1><p>Pelajari unsur pembangun dan contoh novel Indonesia. Baca materi, ikuti simulasi, lalu uji pemahamanmu!</p><span class="tag">Baca · Amati · Coba · Refleksi</span></div><div class="bookart" aria-label="Ilustrasi buku">📚✨<span class="berry-float berry-one" aria-hidden="true">🍓</span><span class="berry-float berry-two" aria-hidden="true">🍓</span></div></header>
+<nav class="nav" aria-label="Navigasi materi"><button class="active" data-tab="belajar">📖 Belajar</button><button data-tab="contoh">🖼️ Contoh Novel</button><button data-tab="simulasi">🎭 Simulasi</button><button data-tab="latihan">✍️ Berlatih</button><button data-tab="refleksi">💭 Refleksi</button><button data-tab="sumber">🔎 Sumber</button></nav>
+<section id="belajar" class="panel active">
+<h2>Unsur-unsur novel</h2>
+<div class="grid">
+<article class="card"><h3>Unsur intrinsik</h3><ul><li><b>Tema:</b> gagasan utama cerita.</li><li><b>Tokoh dan penokohan:</b> pelaku dan sifatnya.</li><li><b>Alur:</b> rangkaian peristiwa.</li><li><b>Latar:</b> tempat, waktu, dan suasana.</li><li><b>Sudut pandang:</b> posisi pencerita.</li><li><b>Amanat:</b> pesan yang dapat ditafsirkan pembaca.</li><li><b>Gaya bahasa:</b> cara pengarang menggunakan bahasa.</li></ul></article>
+<article class="card"><h3>Unsur ekstrinsik</h3><p>Faktor di luar cerita yang dapat membantu pembaca memahami karya, misalnya latar belakang pengarang, keadaan sosial-budaya, sejarah, nilai moral, dan kondisi masyarakat.</p><div class="icon">🌱 🍓</div></article>
+</div>
+<h2>Ciri-ciri novel</h2><ul><li>Ceritanya relatif panjang dan berkembang.</li><li>Tokoh dapat mengalami perubahan sepanjang cerita.</li><li>Memiliki konflik dan rangkaian peristiwa.</li><li>Latar dan persoalan dapat beragam.</li><li>Makna atau amanat dapat ditafsirkan pembaca.</li></ul>
+</section>
+<section id="contoh" class="panel">
+<h2>2. Galeri contoh novel dari berbagai genre <span class="berry-mini" aria-hidden="true">🍓</span></h2>
+<p>Jelajahi novel Indonesia dan dunia. Kartu sampul di bawah merupakan <b>ilustrasi dekoratif buatan halaman</b>, bukan sampul resmi. Sinopsis dan catatan analisis ditulis ringkas untuk pembelajaran.</p>
+<div class="toolbar">
+<div><label for="novelSearch">Cari judul atau penulis</label><input type="text" id="novelSearch" placeholder="Contoh: Laskar Pelangi, Tere Liye..."></div>
+<div><label for="genreFilter">Filter genre</label><select id="genreFilter"><option value="">Semua genre</option><option>Pendidikan & perjuangan</option><option>Sejarah & sosial</option><option>Kehidupan & persahabatan</option><option>Romansa remaja</option><option>Fantasi & petualangan</option><option>Misteri & detektif</option><option>Klasik dunia</option></select></div>
+</div>
+<div class="notice">📚 Tips: analisis unsur intrinsik harus didukung bagian cerita yang benar-benar dibaca. Sinopsis ringkas ini hanya titik awal untuk diskusi, bukan pengganti membaca novel.</div>
+<p id="novelCount" class="small" aria-live="polite">Menampilkan 16 contoh novel.</p>
+<div class="grid" id="novelGrid">
+
+<article class="card novel-card" data-genre="Pendidikan &amp; persahabatan" data-title="laskar pelangi" data-author="andrea hirata">
+  <div class="cover c1"><span aria-hidden="true">🍓</span><b>Laskar Pelangi</b><small>Andrea Hirata</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Laskar Pelangi</h3>
+  <p class="small"><b>Penulis:</b> Andrea Hirata · <b>Tahun terbit pertama:</b> 2005*</p>
+  <p><span class="pill">Pendidikan &amp; persahabatan</span></p>
+  <p>Kisah anak-anak Belitung yang berjuang memperoleh pendidikan di tengah keterbatasan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: pendidikan dan harapan; tokoh: Ikal dan kawan-kawan; latar: Belitung dan sekolah; nilai: kegigihan dan persahabatan.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.andreahirata.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Laskar Pelangi">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Pendidikan &amp; perjuangan" data-title="negeri 5 menara" data-author="ahmad fuadi">
+  <div class="cover c2"><span aria-hidden="true">📖</span><b>Negeri 5 Menara</b><small>Ahmad Fuadi</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Negeri 5 Menara</h3>
+  <p class="small"><b>Penulis:</b> Ahmad Fuadi · <b>Tahun terbit pertama:</b> 2009*</p>
+  <p><span class="pill">Pendidikan &amp; perjuangan</span></p>
+  <p>Sekelompok santri menjalin persahabatan dan merawat cita-cita selama belajar di pesantren.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: pendidikan dan cita-cita; tokoh: Alif dan sahabatnya; latar: pesantren; nilai: disiplin dan kerja keras.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://ahmadfuadi.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Negeri 5 Menara">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Pendidikan &amp; perjuangan" data-title="sang pemimpi" data-author="andrea hirata">
+  <div class="cover c3"><span aria-hidden="true">🍓</span><b>Sang Pemimpi</b><small>Andrea Hirata</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Sang Pemimpi</h3>
+  <p class="small"><b>Penulis:</b> Andrea Hirata · <b>Tahun terbit pertama:</b> 2006*</p>
+  <p><span class="pill">Pendidikan &amp; perjuangan</span></p>
+  <p>Ikal dan Arai berusaha menjaga impian mereka meski menghadapi keterbatasan hidup.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: mimpi dan perjuangan; tokoh: Ikal dan Arai; nilai: optimisme.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.andreahirata.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Sang Pemimpi">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Sejarah &amp; sosial" data-title="bumi manusia" data-author="pramoedya ananta toer">
+  <div class="cover c4"><span aria-hidden="true">📖</span><b>Bumi Manusia</b><small>Pramoedya Ananta Toer</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Bumi Manusia</h3>
+  <p class="small"><b>Penulis:</b> Pramoedya Ananta Toer · <b>Tahun terbit pertama:</b> 1980*</p>
+  <p><span class="pill">Sejarah &amp; sosial</span></p>
+  <p>Kisah Minke di masa kolonial mengangkat pendidikan, identitas, relasi kuasa, dan ketidakadilan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: kolonialisme dan keadilan; latar: Hindia Belanda; nilai: berpikir kritis.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.pramoedya.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Bumi Manusia">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Sejarah &amp; sosial" data-title="ronggeng dukuh paruk" data-author="ahmad tohari">
+  <div class="cover c1"><span aria-hidden="true">🍓</span><b>Ronggeng Dukuh Paruk</b><small>Ahmad Tohari</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Ronggeng Dukuh Paruk</h3>
+  <p class="small"><b>Penulis:</b> Ahmad Tohari · <b>Tahun terbit pertama:</b> 1982*</p>
+  <p><span class="pill">Sejarah &amp; sosial</span></p>
+  <p>Kehidupan masyarakat desa dan tradisi ronggeng digambarkan melalui pengalaman Srintil dan Rasus.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: tradisi dan perubahan sosial; latar: pedesaan; nilai: memahami konteks budaya dan kemanusiaan.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.ahmadtohari.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Ronggeng Dukuh Paruk">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Sejarah &amp; sosial" data-title="laut bercerita" data-author="leila s. chudori">
+  <div class="cover c2"><span aria-hidden="true">📖</span><b>Laut Bercerita</b><small>Leila S. Chudori</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Laut Bercerita</h3>
+  <p class="small"><b>Penulis:</b> Leila S. Chudori · <b>Tahun terbit pertama:</b> 2017*</p>
+  <p><span class="pill">Sejarah &amp; sosial</span></p>
+  <p>Novel ini mengikuti pengalaman aktivis mahasiswa dan keluarga yang menghadapi kehilangan pada masa represi politik.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: ingatan, keluarga, dan hak asasi; nilai: empati dan keberanian.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://leilachudori.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Laut Bercerita">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Kehidupan &amp; persahabatan" data-title="hujan" data-author="tere liye">
+  <div class="cover c3"><span aria-hidden="true">🍓</span><b>Hujan</b><small>Tere Liye</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Hujan</h3>
+  <p class="small"><b>Penulis:</b> Tere Liye · <b>Tahun terbit pertama:</b> 2016*</p>
+  <p><span class="pill">Kehidupan &amp; persahabatan</span></p>
+  <p>Lail menghadapi perubahan besar dalam hidupnya dan mencoba memahami kehilangan, ingatan, serta masa depan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: kehilangan dan harapan; tokoh: Lail; nilai: keteguhan dan kepedulian.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.gramedia.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Hujan">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Romansa remaja" data-title="dilan: dia adalah dilanku tahun 1990" data-author="pidi baiq">
+  <div class="cover c4"><span aria-hidden="true">📖</span><b>Dilan: Dia adalah Dilanku Tahun 1990</b><small>Pidi Baiq</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Dilan: Dia adalah Dilanku Tahun 1990</h3>
+  <p class="small"><b>Penulis:</b> Pidi Baiq · <b>Tahun terbit pertama:</b> 2014*</p>
+  <p><span class="pill">Romansa remaja</span></p>
+  <p>Milea mengenang pertemuannya dengan Dilan dan dinamika hubungan mereka di Bandung pada 1990.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: remaja dan hubungan; latar: Bandung; nilai: memahami komunikasi dan pilihan.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://pidibaiq.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Dilan: Dia adalah Dilanku Tahun 1990">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Kehidupan &amp; persahabatan" data-title="perahu kertas" data-author="dee lestari">
+  <div class="cover c1"><span aria-hidden="true">🍓</span><b>Perahu Kertas</b><small>Dee Lestari</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Perahu Kertas</h3>
+  <p class="small"><b>Penulis:</b> Dee Lestari · <b>Tahun terbit pertama:</b> 2009*</p>
+  <p><span class="pill">Kehidupan &amp; persahabatan</span></p>
+  <p>Kugy dan Keenan berusaha memahami impian, karya, dan hubungan mereka saat hidup bergerak ke arah berbeda.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: impian dan pencarian diri; nilai: keberanian mengembangkan potensi.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://deelestari.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Perahu Kertas">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Fantasi &amp; petualangan" data-title="harry potter and the philosopher’s stone" data-author="j. k. rowling">
+  <div class="cover c2"><span aria-hidden="true">📖</span><b>Harry Potter and the Philosopher’s Stone</b><small>J. K. Rowling</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Harry Potter and the Philosopher’s Stone</h3>
+  <p class="small"><b>Penulis:</b> J. K. Rowling · <b>Tahun terbit pertama:</b> 1997*</p>
+  <p><span class="pill">Fantasi &amp; petualangan</span></p>
+  <p>Harry mengetahui bahwa dirinya penyihir dan memulai kehidupan baru di sekolah sihir Hogwarts.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: persahabatan dan keberanian; tokoh: Harry, Ron, Hermione; nilai: kerja sama.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.jkrowling.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Harry Potter and the Philosopher’s Stone">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Fantasi &amp; petualangan" data-title="the hobbit" data-author="j. r. r. tolkien">
+  <div class="cover c3"><span aria-hidden="true">🍓</span><b>The Hobbit</b><small>J. R. R. Tolkien</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>The Hobbit</h3>
+  <p class="small"><b>Penulis:</b> J. R. R. Tolkien · <b>Tahun terbit pertama:</b> 1937*</p>
+  <p><span class="pill">Fantasi &amp; petualangan</span></p>
+  <p>Bilbo Baggins meninggalkan kehidupan nyaman untuk ikut perjalanan penuh tantangan bersama para kurcaci.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: petualangan dan keberanian; nilai: keberanian tumbuh dari pengalaman.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.tolkienestate.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="The Hobbit">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Fantasi &amp; refleksi" data-title="the little prince" data-author="antoine de saint-exupéry">
+  <div class="cover c4"><span aria-hidden="true">📖</span><b>The Little Prince</b><small>Antoine de Saint-Exupéry</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>The Little Prince</h3>
+  <p class="small"><b>Penulis:</b> Antoine de Saint-Exupéry · <b>Tahun terbit pertama:</b> 1943*</p>
+  <p><span class="pill">Fantasi &amp; refleksi</span></p>
+  <p>Seorang pilot bertemu pangeran kecil yang bercerita tentang perjalanan, persahabatan, dan cara melihat kehidupan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: persahabatan dan makna hidup; nilai: empati dan melihat lebih dalam dari penampilan.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.gallimard.fr/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="The Little Prince">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Misteri &amp; detektif" data-title="a study in scarlet" data-author="arthur conan doyle">
+  <div class="cover c1"><span aria-hidden="true">🍓</span><b>A Study in Scarlet</b><small>Arthur Conan Doyle</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>A Study in Scarlet</h3>
+  <p class="small"><b>Penulis:</b> Arthur Conan Doyle · <b>Tahun terbit pertama:</b> 1887*</p>
+  <p><span class="pill">Misteri &amp; detektif</span></p>
+  <p>Kisah awal pertemuan Sherlock Holmes dan Dr. Watson saat mereka menyelidiki sebuah kasus pembunuhan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: penalaran dan penyelidikan; nilai: berpikir logis.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.arthur-conan-doyle.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="A Study in Scarlet">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Misteri &amp; detektif" data-title="murder on the orient express" data-author="agatha christie">
+  <div class="cover c2"><span aria-hidden="true">📖</span><b>Murder on the Orient Express</b><small>Agatha Christie</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Murder on the Orient Express</h3>
+  <p class="small"><b>Penulis:</b> Agatha Christie · <b>Tahun terbit pertama:</b> 1934*</p>
+  <p><span class="pill">Misteri &amp; detektif</span></p>
+  <p>Hercule Poirot menyelidiki pembunuhan di kereta yang terjebak salju dan mengumpulkan petunjuk dari para penumpang.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: misteri dan keadilan; nilai: menilai bukti dengan cermat.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.agathachristie.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Murder on the Orient Express">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Klasik dunia" data-title="pride and prejudice" data-author="jane austen">
+  <div class="cover c3"><span aria-hidden="true">🍓</span><b>Pride and Prejudice</b><small>Jane Austen</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>Pride and Prejudice</h3>
+  <p class="small"><b>Penulis:</b> Jane Austen · <b>Tahun terbit pertama:</b> 1813*</p>
+  <p><span class="pill">Klasik dunia</span></p>
+  <p>Elizabeth Bennet menilai kembali prasangka dan pemahamannya tentang keluarga, kelas sosial, serta hubungan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: prasangka dan kelas sosial; nilai: introspeksi dan memahami orang lain.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.janeausten.org/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="Pride and Prejudice">♡ Pilih novel favorit</button>
+</article>
+
+<article class="card novel-card" data-genre="Klasik dunia" data-title="to kill a mockingbird" data-author="harper lee">
+  <div class="cover c4"><span aria-hidden="true">📖</span><b>To Kill a Mockingbird</b><small>Harper Lee</small><small>Ilustrasi pembelajaran · bukan sampul resmi</small></div>
+  <h3>To Kill a Mockingbird</h3>
+  <p class="small"><b>Penulis:</b> Harper Lee · <b>Tahun terbit pertama:</b> 1960*</p>
+  <p><span class="pill">Klasik dunia</span></p>
+  <p>Melalui sudut pandang Scout, pembaca melihat kehidupan kota kecil dan persoalan prasangka serta keadilan.</p>
+  <details><summary>Lihat analisis unsur novel 🍓</summary>
+    <p><b>Gambaran analisis:</b> Tema: keadilan dan empati; nilai: memahami orang lain dan melawan prasangka.</p>
+    <p><b>Tokoh dan alur:</b> periksa tokoh utama, tujuan tokoh, konflik, perubahan tokoh, serta bagaimana peristiwa disusun. Detail dapat berbeda menurut bagian cerita yang dianalisis.</p>
+    <p><b>Sudut pandang dan latar:</b> amati siapa yang menceritakan kisah, tempat dan waktu peristiwa, serta suasana yang dibangun.</p>
+    <p><b>Sumber untuk ditelusuri:</b> <a href="https://www.harpercollins.com/" target="_blank" rel="noopener">situs penulis/penerbit atau sumber terkait</a>. Pastikan sumber tersebut memang memuat data edisi yang digunakan.</p>
+  </details>
+  <button type="button" class="btn fav-button" aria-pressed="false" data-fav="To Kill a Mockingbird">♡ Pilih novel favorit</button>
+</article>
+</div>
+<div id="noNovel" class="result" hidden>Tidak ada novel yang cocok. Coba kata kunci atau genre lain.</div>
+<div class="result" id="favoriteResult"><b>Novel favoritku 🍓</b><p id="favoriteText">Belum ada novel yang dipilih. Tekan tombol pada kartu novel yang kamu suka.</p></div>
+<h3>Mini analisis bersama</h3>
+<div class="quote">Contoh cerita orisinal: “Setiap sore, Rani datang ke perpustakaan desa. Walau harus berjalan jauh, ia tetap meminjam buku karena ingin melanjutkan sekolah.”</div>
+<p><b>Tokoh:</b> Rani. <b>Latar tempat:</b> perpustakaan desa. <b>Konflik:</b> perjalanan jauh menjadi hambatan. <b>Nilai:</b> kegigihan belajar. Tema dapat dirumuskan sebagai semangat meraih pendidikan.</p>
+<p class="small">*Tahun yang dicantumkan adalah tahun terbit pertama yang umum dirujuk; untuk tugas formal, cocokkan dengan katalog perpustakaan atau edisi buku yang digunakan.</p>
+</section>
+<section id="simulasi" class="panel">
+<h2>3. Simulasi membaca novel <span class="berry-mini" aria-hidden="true">🍓</span></h2>
+<p>Latih kemampuanmu menganalisis unsur novel melalui <b>5 simulasi singkat</b>. Baca setiap cerita, pilih jawaban, lalu tekan tombol periksa.</p>
+<div class="sim-progress"><span>📚 5 cerita mini</span><span>🔎 Unsur intrinsik</span><span>🌷 Umpan balik langsung</span></div>
+<div class="sim-grid">
+<article class="sim-card"><div class="sim-head"><span class="sim-number">01</span><div><h3>Menemukan konflik</h3><span class="pill">Konflik</span></div></div>
+<div class="quote"><b>Cerita orisinal:</b><br>Senin pagi, Dika menemukan buku catatan milik sahabatnya. Ia ingin mengembalikannya sebelum lomba menulis dimulai, tetapi hujan deras membuat jalan menuju rumah sahabatnya sulit dilewati. Dika akhirnya meminta bantuan penjaga sekolah.</div>
+<label for="sim">Apa konflik utama dalam cerita?</label><select id="sim"><option value="">-- Pilih jawaban --</option><option value="a">Dika ingin mengembalikan buku tetapi terhalang hujan.</option><option value="b">Dika sedang belajar matematika.</option><option value="c">Sekolah berada dekat pantai.</option></select><button class="btn" onclick="checkSim()">Periksa jawaban</button><p id="simFeedback" class="feedback" aria-live="polite"></p>
+<div class="steps"><div class="step">Awal<br><small>Dika menemukan buku</small></div><div class="step">Konflik<br><small>Hujan menghambat</small></div><div class="step">Penyelesaian<br><small>Meminta bantuan</small></div></div></article>
+<article class="sim-card"><div class="sim-head"><span class="sim-number">02</span><div><h3>Mengenali latar</h3><span class="pill">Latar tempat</span></div></div>
+<div class="quote"><b>Cerita orisinal:</b><br>Setiap sore, Naya duduk di perpustakaan kota untuk menyelesaikan tugas kelompok. Suara halaman buku yang dibalik dan aroma buku lama menemaninya sampai petang.</div>
+<label for="sim2">Latar tempat yang paling jelas adalah …</label><select id="sim2"><option value="">-- Pilih jawaban --</option><option value="a">Lapangan sekolah</option><option value="b">Perpustakaan kota</option><option value="c">Pantai saat pagi</option></select><button class="btn" onclick="checkPractice('sim2','b','simFeedback2','Tepat! Perpustakaan kota disebutkan langsung dalam cerita.','Perhatikan tempat Naya duduk dan menyelesaikan tugas.')">Periksa jawaban</button><p id="simFeedback2" class="feedback" aria-live="polite"></p></article>
+<article class="sim-card"><div class="sim-head"><span class="sim-number">03</span><div><h3>Menyimpulkan watak tokoh</h3><span class="pill">Penokohan</span></div></div>
+<div class="quote"><b>Cerita orisinal:</b><br>Meski harus mengulang percobaan berkali-kali, Bima tidak menyerah. Ia mencatat kesalahan, memperbaiki langkahnya, dan mencoba kembali hingga berhasil.</div>
+<label for="sim3">Watak Bima berdasarkan tindakannya adalah …</label><select id="sim3"><option value="">-- Pilih jawaban --</option><option value="a">Mudah putus asa</option><option value="b">Ceroboh dan malas</option><option value="c">Tekun dan pantang menyerah</option></select><button class="btn" onclick="checkPractice('sim3','c','simFeedback3','Benar! Bima terus mencoba dan memperbaiki kesalahannya.','Pilih watak yang sesuai dengan tindakan Bima yang terus mencoba.')">Periksa jawaban</button><p id="simFeedback3" class="feedback" aria-live="polite"></p></article>
+<article class="sim-card"><div class="sim-head"><span class="sim-number">04</span><div><h3>Menentukan tema</h3><span class="pill">Tema</span></div></div>
+<div class="quote"><b>Cerita orisinal:</b><br>Ketika teman sekelasnya kesulitan memahami pelajaran, Sita mengajak mereka belajar bersama sepulang sekolah. Mereka saling menjelaskan materi dan akhirnya lebih percaya diri menghadapi ujian.</div>
+<label for="sim4">Tema yang paling sesuai adalah …</label><select id="sim4"><option value="">-- Pilih jawaban --</option><option value="a">Persahabatan dan kerja sama dalam belajar</option><option value="b">Persaingan olahraga</option><option value="c">Petualangan mencari harta karun</option></select><button class="btn" onclick="checkPractice('sim4','a','simFeedback4','Tepat! Cerita menonjolkan kerja sama dan saling membantu dalam belajar.','Pikirkan gagasan utama yang paling sering tampak dalam cerita.')">Periksa jawaban</button><p id="simFeedback4" class="feedback" aria-live="polite"></p></article>
+<article class="sim-card"><div class="sim-head"><span class="sim-number">05</span><div><h3>Mengenali sudut pandang</h3><span class="pill">Sudut pandang</span></div></div>
+<div class="quote"><b>Cerita orisinal:</b><br>Aku berlari menuju halte sambil memeluk buku-bukuku. Aku takut terlambat mengikuti hari pertama klub membaca, tetapi aku juga bersemangat bertemu teman-teman baru.</div>
+<label for="sim5">Sudut pandang yang digunakan adalah …</label><select id="sim5"><option value="">-- Pilih jawaban --</option><option value="a">Orang ketiga, memakai kata “dia”</option><option value="b">Orang pertama, memakai kata “aku”</option><option value="c">Orang kedua, memakai kata “kamu”</option></select><button class="btn" onclick="checkPractice('sim5','b','simFeedback5','Benar! Kata “aku” menunjukkan sudut pandang orang pertama.','Perhatikan kata ganti yang digunakan pencerita.')">Periksa jawaban</button><p id="simFeedback5" class="feedback" aria-live="polite"></p></article>
+</div>
+<p class="small sim-note">🍓 Semua cuplikan pada simulasi ini adalah cerita buatan untuk latihan, bukan kutipan dari novel terbitan. Coba jawab dulu sebelum membaca umpan baliknya.</p>
+</section>
+<section id="latihan" class="panel"><h2>4. Berlatih: Kuis Contoh Novel <span class="berry-mini" aria-hidden="true">🍓</span></h2>
+<p>Kerjakan 15 soal tentang judul, pengarang, genre, dan tema dari novel-novel di galeri. Pilih satu jawaban untuk setiap soal, lalu tekan <b>Periksa jawaban</b>.</p>
+<form id="quiz">
+<div class="q"><p><b>1.</b> Siapa pengarang novel <i>Laskar Pelangi</i>?</p><label class="option"><input type="radio" name="q1" value="a"> Andrea Hirata</label><label class="option"><input type="radio" name="q1" value="b"> Ahmad Fuadi</label><label class="option"><input type="radio" name="q1" value="c"> Tere Liye</label></div>
+<div class="q"><p><b>2.</b> Novel <i>Negeri 5 Menara</i> ditulis oleh …</p><label class="option"><input type="radio" name="q2" value="a"> Pidi Baiq</label><label class="option"><input type="radio" name="q2" value="b"> Ahmad Fuadi</label><label class="option"><input type="radio" name="q2" value="c"> Andrea Hirata</label></div>
+<div class="q"><p><b>3.</b> Novel <i>Bumi Manusia</i> merupakan karya …</p><label class="option"><input type="radio" name="q3" value="a"> Pramoedya Ananta Toer</label><label class="option"><input type="radio" name="q3" value="b"> Leila S. Chudori</label><label class="option"><input type="radio" name="q3" value="c"> Ahmad Tohari</label></div>
+<div class="q"><p><b>4.</b> Tema yang kuat dalam <i>Laskar Pelangi</i> adalah …</p><label class="option"><input type="radio" name="q4" value="a"> Kehidupan detektif</label><label class="option"><input type="radio" name="q4" value="b"> Pendidikan, persahabatan, dan perjuangan</label><label class="option"><input type="radio" name="q4" value="c"> Petualangan di dunia sihir</label></div>
+<div class="q"><p><b>5.</b> Novel <i>Ronggeng Dukuh Paruk</i> ditulis oleh …</p><label class="option"><input type="radio" name="q5" value="a"> Ahmad Tohari</label><label class="option"><input type="radio" name="q5" value="b"> Tere Liye</label><label class="option"><input type="radio" name="q5" value="c"> J. K. Rowling</label></div>
+<div class="q"><p><b>6.</b> Siapa pengarang <i>Laut Bercerita</i>?</p><label class="option"><input type="radio" name="q6" value="a"> Dee Lestari</label><label class="option"><input type="radio" name="q6" value="b"> Leila S. Chudori</label><label class="option"><input type="radio" name="q6" value="c"> Jane Austen</label></div>
+<div class="q"><p><b>7.</b> Novel <i>Dilan: Dia adalah Dilanku Tahun 1990</i> ditulis oleh …</p><label class="option"><input type="radio" name="q7" value="a"> Pidi Baiq</label><label class="option"><input type="radio" name="q7" value="b"> Andrea Hirata</label><label class="option"><input type="radio" name="q7" value="c"> Harper Lee</label></div>
+<div class="q"><p><b>8.</b> Novel <i>Perahu Kertas</i> merupakan karya …</p><label class="option"><input type="radio" name="q8" value="a"> Agatha Christie</label><label class="option"><input type="radio" name="q8" value="b"> Dee Lestari</label><label class="option"><input type="radio" name="q8" value="c"> Antoine de Saint-Exupéry</label></div>
+<div class="q"><p><b>9.</b> Siapakah pengarang seri novel <i>Harry Potter</i>?</p><label class="option"><input type="radio" name="q9" value="a"> J. R. R. Tolkien</label><label class="option"><input type="radio" name="q9" value="b"> J. K. Rowling</label><label class="option"><input type="radio" name="q9" value="c"> Arthur Conan Doyle</label></div>
+<div class="q"><p><b>10.</b> <i>The Hobbit</i> dikenal sebagai novel bergenre …</p><label class="option"><input type="radio" name="q10" value="a"> Fantasi dan petualangan</label><label class="option"><input type="radio" name="q10" value="b"> Romansa remaja</label><label class="option"><input type="radio" name="q10" value="c"> Misteri detektif</label></div>
+<div class="q"><p><b>11.</b> Tokoh utama dalam <i>The Little Prince</i> dikenal sebagai …</p><label class="option"><input type="radio" name="q11" value="a"> Pangeran kecil yang melakukan perjalanan dan bertemu beragam tokoh</label><label class="option"><input type="radio" name="q11" value="b"> Detektif yang menyelidiki pembunuhan di kereta</label><label class="option"><input type="radio" name="q11" value="c"> Pelajar yang bersekolah di dunia sihir</label></div>
+<div class="q"><p><b>12.</b> Novel <i>A Study in Scarlet</i> memperkenalkan tokoh detektif …</p><label class="option"><input type="radio" name="q12" value="a"> Hercule Poirot</label><label class="option"><input type="radio" name="q12" value="b"> Sherlock Holmes</label><label class="option"><input type="radio" name="q12" value="c"> Bilbo Baggins</label></div>
+<div class="q"><p><b>13.</b> Siapakah detektif yang menyelidiki kasus dalam <i>Murder on the Orient Express</i>?</p><label class="option"><input type="radio" name="q13" value="a"> Hercule Poirot</label><label class="option"><input type="radio" name="q13" value="b"> Sherlock Holmes</label><label class="option"><input type="radio" name="q13" value="c"> Minke</label></div>
+<div class="q"><p><b>14.</b> <i>Pride and Prejudice</i> ditulis oleh …</p><label class="option"><input type="radio" name="q14" value="a"> Jane Austen</label><label class="option"><input type="radio" name="q14" value="b"> Harper Lee</label><label class="option"><input type="radio" name="q14" value="c"> Leila S. Chudori</label></div>
+<div class="q"><p><b>15.</b> Salah satu tema penting dalam <i>To Kill a Mockingbird</i> adalah …</p><label class="option"><input type="radio" name="q15" value="a"> Keadilan dan prasangka sosial</label><label class="option"><input type="radio" name="q15" value="b"> Sekolah sihir dan mantra</label><label class="option"><input type="radio" name="q15" value="c"> Perjalanan mencari harta karun di dunia fantasi</label></div>
+<button type="button" class="btn" onclick="gradeQuiz()">Periksa jawaban</button> <button type="reset" class="btn secondary" onclick="document.getElementById('score').hidden=true">Ulangi</button></form>
+<div id="score" class="result" hidden aria-live="polite"></div></section>
+<section id="refleksi" class="panel"><h2>5. Refleksi belajar <span class="berry-mini" aria-hidden="true">🍓</span></h2><p>Renungkan pengalamanmu setelah mempelajari materi. Isi jawaban singkat di bawah ini.</p><label for="paham">1. Apa yang baru kamu ketahui tentang materi contoh novel?</label><textarea id="paham" rows="3" placeholder="Tuliskan hal baru yang kamu ketahui dari contoh-contoh novel..."></textarea><label for="suka">2. Bagian yang paling menarik bagi saya adalah …</label><textarea id="suka" rows="2" placeholder="Materi, contoh, atau simulasi..."></textarea><label for="lanjut">3. Hal yang masih ingin saya pelajari adalah …</label><textarea id="lanjut" rows="2" placeholder="Tuliskan pertanyaanmu..."></textarea><button class="btn" onclick="makeReflection()">Lihat rangkuman refleksi</button><div id="reflectionOut" class="result" hidden></div><p class="small">Jawaban refleksi tersimpan sementara di halaman ini saja. Salin jika ingin menyimpannya.</p></section>
+<section id="sumber" class="panel">
+<h2>6. Sumber belajar dan referensi 🍓</h2>
+<p>Daftar ini merupakan titik awal penelusuran. Sebagian kartu ahli di bagian Belajar adalah parafrasa konsep umum, bukan kutipan langsung. Untuk tugas formal, periksa buku atau katalog perpustakaan dan catat edisi, penerbit, tahun, serta halaman dari sumber yang benar-benar dibaca.</p>
+<ol class="source">
+<li>Burhan Nurgiyantoro, <i>Teori Pengkajian Fiksi</i>. Gadjah Mada University Press. <a href="https://ugmpress.ugm.ac.id/" target="_blank" rel="noopener">Situs UGM Press</a>.</li>
+<li>Henry Guntur Tarigan, <i>Prinsip-Prinsip Dasar Sastra</i>. Angkasa. Untuk data edisi dan halaman, periksa katalog perpustakaan.</li>
+<li>Aminuddin, <i>Pengantar Apresiasi Karya Sastra</i>. Periksa edisi dan data penerbit pada katalog perpustakaan.</li>
+<li>M. H. Abrams, <i>A Glossary of Literary Terms</i>. Gunakan katalog perpustakaan untuk menemukan edisi yang dipakai.</li>
+<li>Modul Bahasa Indonesia Kelas XI, Direktorat SMA/Kementerian Pendidikan: <a href="https://anyflip.com/livhu/rxrn/basic/551-581" target="_blank" rel="noopener">salinan modul daring</a>. Jika memungkinkan, prioritaskan salinan dari situs resmi kementerian.</li>
+<li>Repositori UIN Syarif Hidayatullah Jakarta, karya akademik yang membahas pengertian novel dan teori sastra: <a href="https://repository.uinjkt.ac.id/" target="_blank" rel="noopener">Repositori UIN Jakarta</a>.</li>
+</ol>
+<h3>Penelusuran karya dan pengarang</h3>
+<ul class="source">
+<li><a href="https://www.andreahirata.com/" target="_blank" rel="noopener">Andrea Hirata</a> — karya Andrea Hirata.</li>
+<li><a href="https://ahmadfuadi.com/" target="_blank" rel="noopener">Ahmad Fuadi</a> — karya Ahmad Fuadi.</li>
+<li><a href="https://www.pramoedya.com/" target="_blank" rel="noopener">Pramoedya Ananta Toer</a> — informasi terkait karya dan penulis.</li>
+<li><a href="https://leilachudori.com/" target="_blank" rel="noopener">Leila S. Chudori</a> — karya dan informasi penulis.</li>
+<li><a href="https://www.jkrowling.com/" target="_blank" rel="noopener">J. K. Rowling</a> — situs resmi penulis.</li>
+<li><a href="https://www.tolkienestate.com/" target="_blank" rel="noopener">The Tolkien Estate</a> — informasi terkait karya Tolkien.</li>
+<li><a href="https://www.agathachristie.com/" target="_blank" rel="noopener">Agatha Christie</a> — situs resmi penulis/estate.</li>
+<li><a href="https://www.janeausten.org/" target="_blank" rel="noopener">Jane Austen</a> — sumber informasi terkait penulis dan karyanya.</li>
+</ul>
+<div class="quote"><b>Catatan penting:</b> tautan situs penulis atau penerbit adalah titik awal penelusuran, bukan jaminan bahwa semua rincian novel sudah tercantum pada halaman itu. Ilustrasi sampul di MPI bukan sampul resmi. Jangan mengutip kalimat ahli sebagai kutipan langsung tanpa memeriksa teks aslinya.</div>
+</section>
+<footer class="footer">MPI Bahasa Indonesia · Materi Novel · Bisa digunakan secara offline setelah file dibuka di browser.</footer></main>
+<script>
+const tabs=document.querySelectorAll('.nav button');tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===b.dataset.tab));window.scrollTo({top:0,behavior:'smooth'});}));
+function showDetail(title,body){let d=document.getElementById('detail');d.hidden=false;d.innerHTML='<b>'+title+'</b><p>'+body+'</p>';d.scrollIntoView({behavior:'smooth',block:'nearest'});}
+function checkPractice(selectId,correct,feedbackId,successText,tryText){const value=document.getElementById(selectId).value;const box=document.getElementById(feedbackId);if(!value){box.textContent='Pilih jawaban terlebih dahulu ya.';box.style.color='#a05c20';return}const ok=value===correct;box.textContent=ok?successText:tryText;box.style.color=ok?'#247346':'#a05c20';}
+function checkSim(){let v=document.getElementById('sim').value, f=document.getElementById('simFeedback');if(!v){f.textContent='Pilih jawaban terlebih dahulu ya.';f.style.color='#a05c20';return}f.textContent=v==='a'?'Benar! Konflik adalah hambatan yang dialami tokoh saat ingin mencapai tujuan.':'Belum tepat. Cari bagian yang menunjukkan hambatan yang dialami Dika.';f.style.color=v==='a'?'#247346':'#a05c20';}
+function gradeQuiz(){let key={q1:'a',q2:'b',q3:'a',q4:'b',q5:'a',q6:'b',q7:'a',q8:'b',q9:'b',q10:'a',q11:'a',q12:'b',q13:'a',q14:'a',q15:'a'},answers=['Andrea Hirata','Ahmad Fuadi','Pramoedya Ananta Toer','Pendidikan, persahabatan, dan perjuangan','Ahmad Tohari','Leila S. Chudori','Pidi Baiq','Dee Lestari','J. K. Rowling','Fantasi dan petualangan','Pangeran kecil yang melakukan perjalanan dan bertemu beragam tokoh','Sherlock Holmes','Hercule Poirot','Jane Austen','Keadilan dan prasangka sosial'],score=0,answered=0;Object.keys(key).forEach(k=>{let x=document.querySelector('input[name="'+k+'"]:checked');if(x){answered++;if(x.value===key[k])score++}});let box=document.getElementById('score');box.hidden=false;box.innerHTML='<b>Nilai kamu: '+score+'/15 ('+Math.round(score/15*100)+'%)</b><p>'+(answered<15?'Kamu menjawab '+answered+' dari 15 soal. ':'')+(score===15?'Hebat! Semua jawaban benar.':score>=10?'Bagus! Coba pelajari kembali soal yang masih keliru.':'Tetap semangat! Buka galeri Contoh Novel, baca detailnya, lalu coba lagi.')+'</p><details><summary>Lihat kunci jawaban</summary><ol>'+answers.map(a=>'<li>'+a+'</li>').join('')+'</ol></details>';}
+function makeReflection(){let vals=[['Hal baru',document.getElementById('paham').value.trim()],['Bagian menarik',document.getElementById('suka').value.trim()],['Ingin dipelajari',document.getElementById('lanjut').value.trim()]];let out=document.getElementById('reflectionOut');out.hidden=false;out.innerHTML='<b>Rangkuman refleksimu</b>'+vals.map(v=>'<p><b>'+v[0]+':</b> '+(v[1]||'Belum diisi')+'</p>').join('')+'<button class="btn" onclick="copyReflection()">Salin refleksi</button>';}
+function copyReflection(){let txt=['Refleksi belajar novel', 'Hal baru: '+document.getElementById('paham').value,'Bagian menarik: '+document.getElementById('suka').value,'Ingin dipelajari: '+document.getElementById('lanjut').value].join('\n');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(()=>alert('Refleksi disalin!')).catch(()=>alert(txt))}else{alert(txt)}}
+
+// Galeri novel: pencarian, filter genre, dan pilihan favorit
+(function(){
+  const search = document.getElementById('novelSearch');
+  const filter = document.getElementById('genreFilter');
+  const cards = Array.from(document.querySelectorAll('.novel-card'));
+  const count = document.getElementById('novelCount');
+  const empty = document.getElementById('noNovel');
+  const favText = document.getElementById('favoriteText');
+  let favorites = [];
+  function updateGallery(){
+    const q = (search.value || '').trim().toLowerCase();
+    const g = filter.value;
+    let shown = 0;
+    cards.forEach(card=>{
+      const matchQ = (card.dataset.title + ' ' + card.dataset.author).includes(q);
+      const matchG = !g || card.dataset.genre === g;
+      card.hidden = !(matchQ && matchG);
+      if(!card.hidden) shown++;
+    });
+    count.textContent = 'Menampilkan ' + shown + ' dari ' + cards.length + ' contoh novel.';
+    empty.hidden = shown !== 0;
+  }
+  if(search) search.addEventListener('input', updateGallery);
+  if(filter) filter.addEventListener('change', updateGallery);
+  document.querySelectorAll('.fav-button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const name = btn.dataset.fav;
+      if(favorites.includes(name)){
+        favorites = favorites.filter(x=>x!==name);
+        btn.setAttribute('aria-pressed','false');
+        btn.textContent = '♡ Pilih novel favorit';
+      } else {
+        favorites.push(name);
+        btn.setAttribute('aria-pressed','true');
+        btn.textContent = '♥ Dipilih';
+      }
+      favText.textContent = favorites.length ? 'Pilihanmu: ' + favorites.join(', ') + '.' : 'Belum ada novel yang dipilih. Tekan tombol pada kartu novel yang kamu suka.';
+    });
+  });
+  updateGallery();
+})();
+
+</script></body></html>
